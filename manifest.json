@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Tamizhaga Vetri Kazhagam (TVK)",
+  "description": "Premium Chrome extension featuring the colors and spirit of Tamizhaga Vetri Kazhagam — rotating backgrounds with every new tab.",
+  "version": "2.0.1",
+  "permissions": ["topSites"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
