@@ -125,8 +125,6 @@ def create_toolbar_texture(width=200, height=48):
         g = int(DARK_CRIMSON[1] + (CRIMSON[1] - DARK_CRIMSON[1]) * ratio * 0.3)
         b = int(DARK_CRIMSON[2] + (CRIMSON[2] - DARK_CRIMSON[2]) * ratio * 0.3)
         draw.line([(0, y), (width, y)], fill=(r, g, b))
-    # Gold accent line at bottom
-    draw.line([(0, height - 1), (width, height - 1)], fill=GOLD, width=2)
     return img
 
 

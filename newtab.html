@@ -104,10 +104,18 @@
       box-shadow: 0 0 20px rgba(245, 184, 0, 0.15);
     }
 
+    .search-container {
+      width: 580px;
+      max-width: 90vw;
+      margin-top: 4vh;
+    }
+
     .shortcuts {
       display: flex;
       gap: 24px;
-      margin-top: 5vh;
+      margin-top: 3vh;
+      border-top: 2px solid rgba(245, 184, 0, 0.5);
+      padding-top: 3vh;
       flex-wrap: wrap;
       justify-content: center;
       max-width: 700px;
@@ -185,11 +193,11 @@
   <div class="bg" id="bg"></div>
   <div class="overlay"></div>
   <div class="content">
-    <div class="clock" id="clock"></div>
-    <div class="date" id="date"></div>
     <div class="search-container">
       <input type="text" class="search-bar" id="searchBar" placeholder="Search Google..." autofocus>
     </div>
+    <div class="clock" id="clock"></div>
+    <div class="date" id="date"></div>
     <div class="shortcuts" id="shortcuts"></div>
   </div>
   <div class="branding">

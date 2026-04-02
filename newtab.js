@@ -53,6 +53,7 @@ function loadShortcuts() {
         var domain = '';
         try { domain = new URL(site.url).hostname; } catch(e) { domain = site.url; }
         var initial = domain.replace('www.', '').charAt(0).toUpperCase();
+        var faviconUrl = 'https://www.google.com/s2/favicons?domain=' + domain + '&sz=32';
 
         var a = document.createElement('a');
         a.className = 'shortcut';
@@ -60,7 +61,17 @@ function loadShortcuts() {
 
         var iconDiv = document.createElement('div');
         iconDiv.className = 'shortcut-icon';
-        iconDiv.textContent = initial;
+
+        var favicon = document.createElement('img');
+        favicon.src = faviconUrl;
+        favicon.width = 24;
+        favicon.height = 24;
+        favicon.style.borderRadius = '4px';
+        favicon.onerror = function() {
+          this.style.display = 'none';
+          iconDiv.textContent = initial;
+        };
+        iconDiv.appendChild(favicon);
 
         var label = document.createElement('span');
         label.className = 'shortcut-label';
