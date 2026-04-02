@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "TVK Tab Theme",
+  "description": "Tamizhaga Vetri Kazhagam themed tabs and toolbar.",
+  "version": "1.0.0",
+  "theme": {
+    "images": {
+      "theme_frame": "images/theme_frame.png",
+      "theme_toolbar": "images/toolbar_texture.png"
+    },
+    "colors": {
+      "frame": [120, 14, 30],
+      "frame_inactive": [90, 10, 22],
+      "toolbar": [120, 14, 30],
+      "tab_text": [255, 215, 0],
+      "tab_background_text": [200, 180, 140],
+      "bookmark_text": [255, 215, 0]
+    },
+    "tints": {
+      "buttons": [0.02, 0.8, 0.8]
+    }
+  }
+}
